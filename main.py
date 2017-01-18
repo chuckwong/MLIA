@@ -4,6 +4,18 @@ import matplotlib.pyplot as plt
 from numpy import *
 from imp import *
 
+def runRecognize(filename):
+    reload(kNN)
+    kNN.recognizeDigit(filename)
+
+def runDigit():
+    reload(kNN)
+    kNN.handwritingClassTest()
+
+def runPerson():
+    reload(kNN)
+    kNN.classifyPerson()
+
 def testData():
     reload(kNN)
     kNN.datingClassTest()
