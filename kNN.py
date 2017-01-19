@@ -137,7 +137,7 @@ def recognizeDigit(filename):
         classNumStr = int(fileStr.split('_')[0])
         hwLabels.append(classNumStr)
         trainingMat[i, :] = img2vector('trainingDigits/%s' % fileNameStr)
-
+    
     vectorUnderTest = img2vector('testDigits/%s' % filename)
     classifierResult = classify0(vectorUnderTest, trainingMat, hwLabels, 3)
     print('the result is: ', classifierResult)
