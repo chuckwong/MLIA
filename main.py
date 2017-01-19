@@ -1,9 +1,11 @@
 import kNN
+import trees
 import matplotlib
 import matplotlib.pyplot as plt
 from numpy import *
 from imp import *
 
+# kNN
 def runRecognize(filename):
     reload(kNN)
     kNN.recognizeDigit(filename)
@@ -32,3 +34,11 @@ def plotDatingData():
     plt.title("Dating History")
     plt.legend()
     plt.show()
+    
+    
+# tree
+def runTree():
+    reload(trees)
+    myDat, labels = trees.createDataSet()
+    myDat
+    trees.calcShannonEnt(myDat)
