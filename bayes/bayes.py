@@ -52,7 +52,9 @@ def trainNB0(trainMatrix, trainCategory):
 def classifyNB(vec2Classify, p0Vec, p1Vec, pClass1):
     p1 = sum(vec2Classify * p1Vec) + log(pClass1)
     p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1)
-    if p1 > 0:
+    print(p1)
+    print(p0)
+    if p1 > p0:
         return 1
     else:
         return 0
@@ -67,11 +69,11 @@ def testingNB():
     # test 1
     testEntry = ['love', 'my', 'dalmation']
     thisDoc = array(setOfWords2Vec(myVocabList, testEntry))
-    print(testEntry, "classified as :", classifyNB(p0V, p1V, pAb))
+    print(testEntry, "classified as :", classifyNB(thisDoc, p0V, p1V, pAb))
     # test 2
     testEntry = ['stupid', 'garbage']
     thisDoc = array(setOfWords2Vec(myVocabList, testEntry))
-    print(testEntry, "classified as :", classifyNB(p0V, p1V, pAb))
+    print(testEntry, "classified as :", classifyNB(thisDoc, p0V, p1V, pAb))
     
 
 
