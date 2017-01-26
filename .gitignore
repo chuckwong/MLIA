@@ -1,6 +1,6 @@
 # mine
-testDigits/
-trainingDigits/
+kNN/testDigits/
+kNN/trainingDigits/
 
 
 # Byte-compiled / optimized / DLL files
@@ -92,3 +92,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
+/decisionTrees/myTree.tree

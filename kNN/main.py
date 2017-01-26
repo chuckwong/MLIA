@@ -1,9 +1,11 @@
-import kNN
-import trees
-import matplotlib
-import matplotlib.pyplot as plt
-from numpy import *
 from imp import *
+
+import matplotlib.pyplot as plt
+import trees
+from numpy import *
+
+import kNN
+
 
 # kNN
 def runRecognize(filename):
