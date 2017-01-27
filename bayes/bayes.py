@@ -11,7 +11,6 @@ def loadDataSet():
         ['quit', 'buying', 'worthless', 'dog', 'food', 'stupid']]
     classVec = [0, 1, 0, 1, 0, 1]
     return postingList, classVec
-    
 def createVocabList(dataSet):
     vocabSet = set([])
     for document in dataSet:
